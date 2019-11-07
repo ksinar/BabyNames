@@ -13,5 +13,5 @@ struct pNames {
 };
 
 /* Function definitions */
-int removeCommas ( char * );
+int removeCommas ( char *  );
 
