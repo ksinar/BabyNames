@@ -245,7 +245,8 @@ int main(int argc, char **argv){
 					decadeCheck, nameCmp, nameCmp);
 			}
 		}
-
+		gender[0] = '\0';
+		nameCmp[0] = '\0';
 	}
 
 	char response[2];
