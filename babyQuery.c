@@ -75,7 +75,7 @@ int main(int argc, char **argv){
 		goto ASKDECADE;
    }
 
-PATH:
+	PATH:
 
 	printf("Would you like to see a rank, search for a name, or see the top 10? [rank, search, top]: ");
 	fgets(path,MAXLENGTH,stdin);
@@ -91,7 +91,7 @@ PATH:
 
 	if(strcmp(path, "rank\n") == 0){
 	
-ASKRANK:
+	ASKRANK:
 
 		printf("What rank do you wish to see? [1-200]: ");
 		fgets(rank,MAXLENGTH,stdin);
@@ -103,7 +103,7 @@ ASKRANK:
 			printf("Only numbers between 1 and 200 are acceptable.\n");
 			goto ASKRANK;
 		}
-ASKGENDER:
+	ASKGENDER:
 		printf("Would you like to see the male (0), female (1) or both (2) name(s)? [0-2]: ");
 		fgets(gender,MAXLENGTH,stdin);
 		sscanf(gender, "%*s");
@@ -165,7 +165,7 @@ ASKGENDER:
 				nameCmp[i] = '\0';
 			}
 		}
-SEARCHNB:
+	SEARCHNB:
 		printf("Do you wish to search male (0), female (1) or both (2) name? [0-2]: ");
 
 		fgets(gender,MAXLENGTH,stdin);
@@ -250,7 +250,7 @@ SEARCHNB:
 
 	char response[2];
 
-Q1:
+	Q1:
 
 	printf("Do you want to ask another question about %d? [Y or N] ", decadeCheck);
 	fgets(response,MAXLENGTH,stdin);
@@ -266,7 +266,7 @@ Q1:
 		goto Q1;
 	}
 
-Q2:
+	Q2:
 
 	printf("Would you like to select another year? [Y or N] ");
 	fgets(response,MAXLENGTH,stdin);

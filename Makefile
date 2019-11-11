@@ -1,6 +1,6 @@
 all: babyQuery babiesQuery
 
-abyQuery:
+babyQuery:
 	gcc -ansi -c -Wall removeCommas.c
 	gcc -ansi -Wall -o babyQuery babyQuery.c removeCommas.o
 
